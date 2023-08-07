@@ -7,6 +7,13 @@
   <link href="https://cesium.com/downloads/cesiumjs/releases/1.108/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
 </head>
 <body>
+  <p id="cross-origin-isolation-status"></p>
+  <script>
+    const isCrossOriginIsolated = window.crossOriginIsolated;
+    const message = isCrossOriginIsolated ? "クロスオリジン分離が有効です" : "クロスオリジン分離が無効です";
+    document.getElementById("cross-origin-isolation-status").textContent = message;
+  </script>
+
   <div id="cesiumContainer"></div>
   <script type="module">
     // `accessToken` クエリパラメーターからアクセストークンを取得
