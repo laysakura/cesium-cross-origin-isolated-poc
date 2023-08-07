@@ -14,6 +14,9 @@
     document.getElementById("cross-origin-isolation-status").textContent = message;
   </script>
 
+  <!-- クロスオリジン分離を有効にする。See: https://github.com/gzuidhof/coi-serviceworker -->
+  <script src="coi-serviceworker.js"></script>
+
   <div id="cesiumContainer"></div>
   <script type="module">
     // `accessToken` クエリパラメーターからアクセストークンを取得
